@@ -48,6 +48,7 @@ export const config: TemplateConfig = {
       "slug",
       "geocodedCoordinate",
       "services",
+      "c_cateringPhoneNumber"
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
@@ -135,6 +136,7 @@ const Location: Template<TemplateRenderProps> = ({
     mainPhone,
     geocodedCoordinate,
     services,
+    c_cateringPhoneNumber
   } = document;
 
   return (
@@ -155,6 +157,7 @@ const Location: Template<TemplateRenderProps> = ({
             <div className="grid grid-cols-3 gap-x-10 gap-y-10">
               <div className="bg-gray-100 p-5 space-y-12">
                 <Contact address={address} phone={mainPhone}></Contact>
+                <p>Catering Phone Number: {c_cateringPhoneNumber}</p>
                 {services && <List list={services}></List>}
               </div>
               <div className="col-span-2 pt-5 space-y-10">

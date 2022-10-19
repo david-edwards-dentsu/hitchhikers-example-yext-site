@@ -1,0 +1,12 @@
+{
+    "$id": "turtlehead-tacos-site",
+    "filter": {
+      "entityIds": ["ce_site"]
+    },
+    "source": "knowledgeGraph",
+    "fields": ["name","c_siteName"],
+    "localization": {
+      "locales": ["en"],
+      "primary": false
+    }
+  }
